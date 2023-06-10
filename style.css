@@ -18,4 +18,11 @@ header {
 
 header .container {
   height: 4.375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
 }
