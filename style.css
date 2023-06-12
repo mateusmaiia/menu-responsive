@@ -82,10 +82,12 @@ nav ul li a:hover {
   .one,
   .two,
   .three {
-    background-color: white;
+    background-color: white; 
     height: 5px;
     width: 100%;
     margin: 6px auto;
+
+    transition-duration: 0.3s;
   }
 
   .menu-burguer {
@@ -103,6 +105,10 @@ nav ul li a:hover {
     height: 100vh;
 
     background: linear-gradient(150deg, #79e4a6, #1bc296);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .menu-section.on nav {
@@ -111,6 +117,31 @@ nav ul li a:hover {
 
   .menu-section.on .menu-burguer {
     position: absolute;
-    right: 0;
+    right: 20px;
+    top: 20px;
+  }
+
+  .menu-section.on .menu-burguer .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .menu-section.on .menu-burguer .two {
+    opacity: 0;
+  }
+
+  .menu-section.on .menu-burguer .three {
+    transform: rotate(-45deg) translate(8px, -9px);
+  }
+
+  .menu-section.on nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  .menu-section.on nav ul li a {
+    transition-duration: 0.3s;
+    font-size: 5rem;
+    line-height: 15rem;
+    margin-left: 0;+
   }
 }
