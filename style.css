@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@600&display=swap");
 
 * {
   padding: 0;
@@ -14,6 +14,11 @@ body {
 
 header {
   background: linear-gradient(90deg, #79e4a6, #1bc296);
+}
+
+.logo h1 {
+  font-family: Noto Sans;
+  color: #f9f9f7;
 }
 
 header .container {
@@ -41,6 +46,7 @@ nav ul li a {
   font-size: 1.3125rem;
   padding: 6px 10px;
   margin-left: 3rem;
+  font-family: Poppins;
 }
 
 nav ul li a:hover {
