@@ -7,9 +7,17 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 html,
 body {
   height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
 }
 
 header {
@@ -22,7 +30,7 @@ header {
 }
 
 header .container {
-  height: 4.375rem;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,13 +51,66 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #f9f9f7;
-  font-size: 1.3125rem;
+  font-size: 2.1rem;
   padding: 6px 10px;
-  margin-left: 3rem;
+  margin-left: 48px;
   font-family: Poppins;
 }
 
 nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.151);
   transition: 0.3s;
+}
+
+@media (max-width: 964px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 809px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 709px) {
+  nav {
+    display: none;
+  }
+
+  .one,
+  .two,
+  .three {
+    background-color: white;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+  }
+
+  .menu-burguer {
+    width: 40px;
+    height: 30px;
+  }
+
+  .menu-section.on {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(150deg, #79e4a6, #1bc296);
+  }
+
+  .menu-section.on nav {
+    display: block;
+  }
+
+  .menu-section.on .menu-burguer {
+    position: absolute;
+    right: 0;
+  }
 }
